@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Svelte {{yield}} issue reproduction</title>
+</head>
+<body>
+	<div id="container"></div>
+	<script src="./yielder.js"></script>
+	<script src="./main.js"></script>
+	<script>
+		new Main({
+			target: document.getElementById('container')
+		})
+	</script>
+</body>
+</html>
